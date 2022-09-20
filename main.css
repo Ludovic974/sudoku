@@ -1,0 +1,27 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Sudoku{
+    height: 450px;
+    width: 450px;
+    background-color: hsl(150deg 60% 36%);
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
